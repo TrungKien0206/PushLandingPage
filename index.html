@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaunchPage</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  </head>
+  <link rel="stylesheet" href="styles.css" />
+  <section>
+    <header>
+      <div class="logo">LaunchPage</div>
+      <nav>
+        <ul>
+          <li><a href="#" id="home-link">Home</a></li>
+          <li>
+            <a href="#" id="about-link" onclick="showWhatWeDo()">About</a>
+          </li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="cta">Get Started</a>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Award-Winning Agency<br />Based in Manchester</h1>
+        <p>
+          Excepteur sint occaecat cupidatat nonet proident,<br />
+          vante nisn culpa qui officia deserunt etimus quis <br />
+          autem nets lorem entimus velis netsad.
+        </p>
+        <div class="play-container">
+          <button class="play-button" onclick="showVideo()">▶</button>
+          <span class="play-text">Watch Presentation Video</span>
+        </div>
+      </div>
+      <div class="form-container">
+        <h2>Get Your Free 14-Day Trial</h2>
+        <p>velis demo enim quia tempor magnet</p>
+        <div class="input-group">
+          <i class="fa fa-building"></i>
+          <input type="text" placeholder="Company Name*" />
+        </div>
+        <div class="input-group">
+          <i class="fa fa-envelope"></i>
+          <input type="email" placeholder="Email Address*" />
+        </div>
+        <select>
+          <option>We need LaunchPage for...</option>
+          <option>Our Support Team</option>
+          <option>Personal</option>
+        </select>
+        <button>Start My Free 14-Day Trial</button>
+        <p>No Credit Card &#8226; No Installation Required</p>
+      </div>
+
+      <div id="video-overlay" class="video-overlay">
+        <div class="video-container">
+          <button class="close-button" onclick="hideVideo()">✖</button>
+          <iframe
+            id="youtube-video"
+            src=""
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <div class="partners-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 mx-auto text-center partners">
+            <h5 class="partners-title">As featured in:</h5>
+            <img
+              src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/award4a.png"
+              class="partners"
+              alt="image"
+            />
+            <img
+              src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/award5.png"
+              class="partners"
+              alt="image"
+            />
+            <img
+              src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/award3a.png"
+              class="partners"
+              alt="image"
+            />
+            <img
+              src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/award1a.png"
+              class="partners"
+              alt="image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-grey" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center margin-bottom-10">
+            <h2 class="section-title">What We Do</h2>
+
+            <p class="section-subtitle">
+              Dicover how our amazing team can help your business.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="main-services blue">
+                <i class="far fa-chart-bar"></i>
+
+                <h4>Google Analitycs</h4>
+
+                <p>
+                  Curabitur quam etsum lacus net netsum nulat iaculis etsimun
+                  vitae etsum nisle varius netsum.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="main-services red">
+                <i class="far fa-heart"></i>
+
+                <h4>Brand Awareness</h4>
+
+                <p>
+                  Curabitur quam etsum lacus net netsum nulat iaculis etsimun
+                  vitae etsum nisle varius netsum.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="main-services green">
+                <i class="fas fa-anchor"></i>
+
+                <h4>Graphic Design</h4>
+
+                <p>
+                  Curabitur quam etsum lacus net netsum nulat iaculis etsimun
+                  vitae etsum nisle varius netsum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div
+            class="col-md-6 wow slideInLeft"
+            data-wow-delay="0.25s"
+            style="
+              visibility: visible;
+              animation-delay: 0.25s;
+              animation-name: slideInLeft;
+            "
+          >
+            <div class="margin-right-15">
+              <img
+                src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/about001.jpg"
+                class="width-100 image-shadow bottom-margins-images"
+                alt="pic"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <h3>Discover how we can help you to grow your business fast.</h3>
+
+            <p>
+              Velis demo enim ipsam voluptatem quia voluptas sit aspernatur
+              netsum lorem fugit, seditum netis velas matrix net nesciunt.
+            </p>
+
+            <ul class="benefits">
+              <li>
+                <i class="fas fa-check"></i> Quias netus magni netsum eos qui
+                ratione sequi.
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Venis ratione sequi netus enim quia
+                tempor magni.
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Enim ipsam netus voluptatem quia
+                voluptas.
+              </li>
+            </ul>
+
+            <a href="#" class="btn-red small scrool">Discover More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grey">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div
+              class="nav flex-column nav-pills margin-right-25"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <a
+                class="nav-link active"
+                id="v-pills-home-tab"
+                data-toggle="pill"
+                data-target="#v-pills-home"
+                Thay
+                href
+                thành
+                data-target
+                --
+              >
+                <div class="features-second">
+                  <div class="dropcaps-circle blue">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+
+                  <h4 class="margin-bottom-5">Customize your workflow.</h4>
+
+                  <p>
+                    Manage any process and be ready to address any challenge
+                    with total ease.
+                  </p>
+                </div>
+              </a>
+
+              <a
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-toggle="pill"
+                data-target="#v-pills-profile"
+                Thay
+                href
+                thành
+                data-target
+                --
+              >
+                <div class="features-second">
+                  <div class="dropcaps-circle red">
+                    <i class="fas fa-network-wired"></i>
+                  </div>
+
+                  <h4 class="margin-bottom-5">
+                    Easy onboarding, fast adoption.
+                  </h4>
+
+                  <p>
+                    With Square getting your team on board is as simple as
+                    sending an email.
+                  </p>
+                </div>
+              </a>
+
+              <a
+                class="nav-link"
+                id="v-pills-messages-tab"
+                data-toggle="pill"
+                data-target="#v-pills-messages"
+                Thay
+                href
+                thành
+                data-target
+                --
+              >
+                <div class="features-second">
+                  <div class="dropcaps-circle green">
+                    <i class="fas fa-rocket"></i>
+                  </div>
+
+                  <h4 class="margin-bottom-5">Improve subscriber retention.</h4>
+
+                  <p>
+                    Analyze customers by region, discounts and more and put a
+                    plan in place.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="tab-content margin-left-20" id="v-pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="v-pills-home"
+                role="tabpanel"
+                aria-labelledby="v-pills-home-tab"
+              >
+                <img
+                  src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/about2.jpg"
+                  class="width-100 image-shadow top-margins-images"
+                  alt="pic"
+                />
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="v-pills-profile"
+                role="tabpanel"
+                aria-labelledby="v-pills-profile-tab"
+              >
+                <img
+                  src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/about5.jpg"
+                  class="width-100 image-shadow top-margins-images"
+                  alt="pic"
+                />
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="v-pills-messages"
+                role="tabpanel"
+                aria-labelledby="v-pills-messages-tab"
+              >
+                <img
+                  src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/about1.jpg"
+                  class="width-100 image-shadow top-margins-images"
+                  alt="pic"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-bg-1">
+      <div class="section-bg-overlay"></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 mx-auto margin-bottom-20 text-center">
+            <h2 class="white-text">Fun Facts About Our Agency</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2 offset-md-2 fun-facts-box text-center">
+            <i class="far fa-gem"></i>
+
+            <p class="fun-facts-title">
+              <span class="facts-numbers">1050+</span><br /><span class="font"
+                >Projects Completed</span
+              >
+            </p>
+          </div>
+
+          <div class="col-md-2 fun-facts-box text-center">
+            <i class="far fa-heart"></i>
+
+            <p class="fun-facts-title">
+              <span class="facts-numbers">217k</span><br /><span class="font"
+                >Happy Clients</span
+              >
+            </p>
+          </div>
+
+          <div class="col-md-2 fun-facts-box text-center">
+            <i class="fas fa-award"></i>
+
+            <p class="fun-facts-title">
+              <span class="facts-numbers">1210</span><br /><span class="font"
+                >Design Awards</span
+              >
+            </p>
+          </div>
+
+          <div class="col-md-2 fun-facts-box text-center">
+            <i class="fas fa-anchor"></i>
+
+            <p class="fun-facts-title">
+              <span class="facts-numbers">2137</span><br /><span class="font"
+                >Line Of Codes</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grey" id="testimonials">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 col-sm-12">
+            <h2>What People Are Saying.</h2>
+
+            <p>
+              Quis autem velis ets reprehender net etid quiste nets voluptate.
+              Utise wisi enim minim veniam, quis etsad aspernatis netsum
+              stationes nets.
+            </p>
+
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <div class="testim-platform first">
+                  <p>TrustPilot</p>
+
+                  <div class="testim-rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="testim-platform">
+                  <p>Feefo</p>
+
+                  <div class="testim-rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-1"></div>
+
+          <div class="col-md-6">
+            <div class="accordion" id="accordionFAQ">
+              <div class="card">
+                <div
+                  id="collapseOne"
+                  class="collapse show"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionFAQ"
+                >
+                  <div class="card-body">
+                    Nemo enim ipsam voluptatem quia voluptas situm ets
+                    aspernatis netsum loris fugit, sed quia magni dolores eos
+                    quis ratione sequi etum nets vesciunt neque.
+                  </div>
+                </div>
+
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <img
+                        src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/testimonials3.jpg"
+                        alt="testimonials"
+                        class="testim-img"
+                      />
+                      <p class="testim-name">
+                        Alexandra Smith / <span>Manager - SmartCoders</span>
+                      </p>
+                    </button>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordionFAQ"
+                >
+                  <div class="card-body">
+                    Nemo enim ipsam voluptatem quia voluptas situm ets
+                    aspernatis netsum loris fugit, sed quia magni dolores eos
+                    quis ratione sequi etum nets vesciunt neque.
+                  </div>
+                </div>
+
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <img
+                        src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/testimonials2.jpg"
+                        alt="testimonials"
+                        class="testim-img"
+                      />
+                      <p class="testim-name">
+                        John Doe / <span>CEO - Epic Design</span>
+                      </p>
+                    </button>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordionFAQ"
+                >
+                  <div class="card-body">
+                    Nemo enim ipsam voluptatem quia voluptas situm ets
+                    aspernatis netsum loris fugit, sed quia magni dolores eos
+                    quis ratione sequi etum nets vesciunt neque.
+                  </div>
+                </div>
+
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <img
+                        src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/testimonials1.jpg"
+                        alt="testimonials"
+                        class="testim-img"
+                      />
+                      <p class="testim-name">
+                        Christina Pages / <span>Designer - New Fashion</span>
+                      </p>
+                    </button>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center margin-bottom-30">
+            <h2 class="section-title">Our Portfolio</h2>
+
+            <p class="section-subtitle">
+              Dicover the latest projects accomplished for my clients.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div
+          class="row wow fadeIn"
+          data-wow-delay="0.25s"
+          style="
+            visibility: visible;
+            animation-delay: 0.25s;
+            animation-name: fadeIn;
+          "
+        >
+          <div class="col-md-4 col-sm-12 p-0 m-0">
+            <figure class="gallery-insta">
+              <div class="popup-gallery popup-gallery-rounded portfolio-pic">
+                <a
+                  class="popup2"
+                  href="https://demo.epic-webdesign.com/tf-launchpage/v1/images/gallery1.jpg"
+                >
+                  <img
+                    src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/gallery1.jpg"
+                    class="width-100"
+                    alt="pic"
+                  />
+                  <span class="eye-wrapper"
+                    ><i
+                      class="fa fa-search-plus eye-icon"
+                      style="font-size: 38px"
+                    ></i
+                  ></span>
+                </a>
+              </div>
+            </figure>
+
+            <figure class="gallery-insta">
+              <div class="popup-gallery popup-gallery-rounded portfolio-pic">
+                <a
+                  class="popup2"
+                  href="https://demo.epic-webdesign.com/tf-launchpage/v1/images/gallery2.jpg"
+                >
+                  <img
+                    src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/gallery2.jpg"
+                    class="width-100"
+                    alt="pic"
+                  />
+                  <span class="eye-wrapper"
+                    ><i
+                      class="fa fa-search-plus eye-icon"
+                      style="font-size: 38px"
+                    ></i
+                  ></span>
+                </a>
+              </div>
+            </figure>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12 p-0 m-0">
+            <figure class="gallery-insta">
+              <div class="popup-gallery popup-gallery-rounded portfolio-pic">
+                <a
+                  class="popup2"
+                  href="https://demo.epic-webdesign.com/tf-launchpage/v1/images/gallery3.jpg"
+                >
+                  <img
+                    src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/gallery3.jpg"
+                    class="width-100"
+                    alt="pic"
+                  />
+                  <span class="eye-wrapper"
+                    ><i
+                      class="fa fa-search-plus eye-icon"
+                      style="font-size: 38px"
+                    ></i
+                  ></span>
+                </a>
+              </div>
+            </figure>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12 p-0 m-0">
+            <figure class="gallery-insta">
+              <div class="popup-gallery popup-gallery-rounded portfolio-pic">
+                <a
+                  class="popup2"
+                  href="https://demo.epic-webdesign.com/tf-launchpage/v1/images/gallery4.jpg"
+                >
+                  <img
+                    src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/gallery4.jpg"
+                    class="width-100"
+                    alt="pic"
+                  />
+                  <span class="eye-wrapper"
+                    ><i
+                      class="fa fa-search-plus eye-icon"
+                      style="font-size: 38px"
+                    ></i
+                  ></span>
+                </a>
+              </div>
+            </figure>
+
+            <figure class="gallery-insta">
+              <div class="popup-gallery popup-gallery-rounded portfolio-pic">
+                <a
+                  class="popup2"
+                  href="https://demo.epic-webdesign.com/tf-launchpage/v1/images/gallery5.jpg"
+                >
+                  <img
+                    src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/gallery5.jpg"
+                    class="width-100"
+                    alt="pic"
+                  />
+                  <span class="eye-wrapper"
+                    ><i
+                      class="fa fa-search-plus eye-icon"
+                      style="font-size: 38px"
+                    ></i
+                  ></span>
+                </a>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grey team-section" id="team">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h2 class="section-titlee">Meet Our Team</h2>
+            <p class="section-subtitle">
+              Discover more about our high performing team.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="team-item">
+              <img
+                src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/team001.jpg"
+                alt="Team Member 1"
+              />
+              <h3>CHRISTINA HAWKINS</h3>
+              <div class="team-info">Head of SEO</div>
+              <p>
+                Johnathan is our co-founder and has <br />
+                developed search strategies for a <br />
+                variety of clients for over 5 years.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="team-item">
+              <img
+                src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/team002.jpg"
+                alt="Team Member 2"
+              />
+              <h3>ANDRES JOHANSON</h3>
+              <div class="team-info">Marketing Manager</div>
+              <p>
+                Andres fell in love with marketing at <br />
+                the school and looks forward to <br />
+                being part of the industry for years.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="team-item">
+              <img
+                src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/team003.jpg"
+                alt="Team Member 3"
+              />
+              <h3>ALEXANDRA SMITHS</h3>
+              <div class="team-info">SEO Specialist</div>
+              <p>
+                Graduating with a degree in Spanish, English and French, she has
+                always <br />
+                loved writing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-bg-2">
+      <div class="section-bg-overlay"></div>
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 mx-auto text-center">
+            <h2 class="white-text">Award-Winning Agency</h2>
+            <p class="white-text">
+              Utise wisi enim minim veniam, quis et stationes ullamcorper nets
+              suscipit ets <br> lobotis nisle consequat nihis etim aspernatur netsum.
+            </p>
+            <a href="#" class="btn-dark small">Discover More</a>
+            <a href="#" class="btn-dark-border small">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+<section class="section-white" id="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center padding-bottom-10">
+        <h2 class="section-title">Amazing Features</h2>
+
+        <p class="section-subtitle">
+          Quis autem velis ets reprehender net etid quiste voluptate.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div
+          class="feature-box light-green wow fadeIn"
+          data-wow-delay="0.25s"
+          style="
+            visibility: visible;
+            animation-delay: 0.5s;
+            animation-name: fadeIn;
+          "
+        >
+          <i class="fas fa-tools"></i>
+
+          <div class="feature-box-text">
+            <h4>Support 24/7</h4>
+
+            <p>
+              Utise wisi enim minim veniam, quis tation ullamcorper suscipit
+              et loboti nisl consequat nihis.
+            </p>
+          </div>
+        </div>
+      </div>
+   
+      <div class="col-md-4">
+        <div
+          class="feature-box light-blue wow fadeIn"
+          data-wow-delay="0.5s"
+          style="
+            visibility: visible;
+            animation-delay: 0.5s;
+            animation-name: fadeIn;
+          "
+        >
+          <i class="fas fa-users"></i>
+
+          <div class="feature-box-text">
+            <h4>User Friendly</h4>
+
+            <p>
+              Utise wisi enim minim veniam, quis tation ullamcorper suscipit
+              et loboti nisl consequat nihis.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div
+          class="feature-box orange wow fadeIn"
+          data-wow-delay="0.75s"
+          style="
+            visibility: visible;
+            animation-delay: 0.5s;
+            animation-name: fadeIn;
+          "
+        >
+          <i class="far fa-bell"></i>
+
+          <div class="feature-box-text">
+            <h4>Notifications</h4>
+
+            <p>
+              Utise wisi enim minim veniam, quis tation ullamcorper suscipit
+              et loboti nisl consequat nihis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div
+          class="feature-box dark-blue wow fadeIn"
+          data-wow-delay="1s"
+          style="
+            visibility: visible;
+            animation-delay: 0.5s;
+            animation-name: fadeIn;
+          "
+        >
+          <i class="fas fa-gift"></i>
+
+          <div class="feature-box-text">
+            <h4>Accesibility</h4>
+
+            <p>
+              Utise wisi enim minim veniam, quis tation ullamcorper suscipit
+              et loboti nisl consequat nihis.
+            </p>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4">
+        <div
+          class="feature-box light-red wow fadeIn"
+          data-wow-delay="1.25s"
+          style="
+            visibility: visible;
+            animation-delay: 0.5s;
+            animation-name: fadeIn;
+          "
+        >
+          <i class="fas fa-piggy-bank"></i>
+
+          <div class="feature-box-text">
+            <h4>Cost Control</h4>
+
+            <p>
+              Utise wisi enim minim veniam, quis tation ullamcorper suscipit
+              et loboti nisl consequat nihis.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div
+          class="feature-box dark-green wow fadeIn"
+          data-wow-delay="1.5s"
+          style="
+            visibility: visible;
+            animation-delay: 0.5s;
+            animation-name: fadeIn;
+          "
+        >
+          <i class="far fa-comments"></i>
+
+          <div class="feature-box-text">
+            <h4>Chat With Friends</h4>
+
+            <p>
+              Utise wisi enim minim veniam, quis tation ullamcorper suscipit
+              et loboti nisl consequat nihis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-grey" id="pricing">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4 col-sm-12">
+        <h3>Great pricing plans tailored to your needs.</h3>
+
+        <p>
+          Quis autem velis ets reprehender net etid quiste voluptate. Utise
+          wisi enim minim veniam, quis et stationes nets.
+        </p>
+      </div>
+     
+      <div
+        class="col-md-4 col-sm-6 wow bounceIn"
+        data-wow-delay="0.25s"
+        style="
+          visibility: visible;
+          animation-delay: 0.25s;
+          animation-name: bounceIn;
+        "
+      >
+        <div class="price-box-white">
+          <ul class="pricing-list">
+            <li class="price-title">MONTHLY</li>
+
+            <li class="price-value">$19</li>
+
+            <li class="price-subtitle">Per Month</li>
+
+            <li class="price-tag"><a href="#">GET STARTED</a></li>
+
+            <li class="price-text">First two weeks free.</li>
+
+            <li class="price-text">Amazing freatures.</li>
+          </ul>
+        </div>
+      </div>
+   
+      <div
+        class="col-md-4 col-sm-6 wow bounceIn"
+        data-wow-delay="0.75s"
+        style="
+          visibility: visible;
+          animation-delay: 0.75s;
+          animation-name: bounceIn;
+        "
+      >
+        <div class="price-box-grey">
+          <ul class="pricing-list">
+            <li class="price-title">ANNUALY</li>
+
+            <li class="price-value">$29</li>
+
+            <li class="price-subtitle">Per Year</li>
+
+            <li class="price-tag"><a href="#">GET STARTED</a></li>
+
+            <li class="price-text">First two weeks free.</li>
+
+            <li class="price-text">Save 45% with this plan</li>
+
+            <li class="price-text">Amazing freatures.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </section>
+    <footer class="footer">
+      <p>&copy; 2024 LaunchPage. All rights reserved.</p>
+    </footer>
+    <!-- PHẦN NÀY XEM VIDEO -->
+    <script>
+      function showVideo() {
+        const overlay = document.getElementById("video-overlay");
+        const iframe = document.getElementById("youtube-video");
+
+        iframe.src = "https://www.youtube.com/embed/FPfQMVf4vwQ?autoplay=1";
+
+        overlay.style.display = "flex";
+
+        document.body.classList.add("no-scroll");
+      }
+
+      function hideVideo() {
+        const overlay = document.getElementById("video-overlay");
+        const iframe = document.getElementById("youtube-video");
+
+        overlay.style.display = "none";
+        iframe.src = "";
+
+        // Xóa lớp ngăn cuộn
+        document.body.classList.remove("no-scroll");
+      }
+    </script>
+<!--PHẦN NÀY ĐỂ ZOOM ẢNH -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".popup2").magnificPopup({
+          type: "image",
+          gallery: {
+            enabled: true, //  nút qua lại
+          },
+          closeBtnInside: true,
+          mainClass: "mfp-fade",
+        });
+      });
+    </script>
+    <!-- PHẦN NÀY CLICK CHUYỂN ẢNH  -->
+    <script>
+      $(document).ready(function () {
+        $(".nav-link").on("click", function (e) {
+          e.preventDefault(); // Ngừng cuộn trang
+
+          var targetTab = $(this).data("target");
+
+          // Ẩn ảnh
+          $(".tab-pane img").hide();
+
+          // Hiển thị ảnh của tab đã chọn
+          $(targetTab).find("img").show();
+
+          $(".nav-link").removeClass("active");
+          $(this).addClass("active");
+
+          $(".tab-pane").removeClass("show active");
+          $(targetTab).addClass("show active");
+        });
+
+        $(".tab-pane img").hide();
+        $(".tab-pane.active img").show();
+      });
+    </script>
+  </body>
+</html>
