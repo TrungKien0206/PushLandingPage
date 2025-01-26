@@ -256,7 +256,6 @@ iframe {
   height: 100%;
 }
 
-/* cho màn hình nhỏ */
 @media (max-width: 768px) {
   .video-container {
     width: 100%;
@@ -277,8 +276,8 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Khoảng cách giữa các logo */
-  flex-wrap: wrap; /* Đảm bảo logo không bị tràn */
+  gap: 20px;
+  flex-wrap: wrap; 
 }
 
 .partners-title {
@@ -295,14 +294,13 @@ iframe {
 .partners img {
   max-height: 60px;
   max-width: 100%;
-  opacity: 0.2; /* Độ mờ ban đầu */
+  opacity: 0.2; 
   transition: opacity 0.3s ease;
   margin: 10px 5px;
 }
 
 .partners img:hover {
-  opacity: 2; /* Làm rõ logo khi hover */
-}
+  opacity: 2; 
 
 footer {
   text-align: center;
@@ -374,7 +372,6 @@ p {
   font-size: 1.2rem;
 }
 
-/* Nút */
 .btn-red {
   display: inline-block;
   background-color: #e74c3c;
@@ -551,7 +548,6 @@ p {
   margin: 0;
   color: #bbbbbb;
 }
-/* Hiệu ứng sáng viền */
 @keyframes borderGlow {
   0% {
     border-color: #b3b3b3;
@@ -790,7 +786,6 @@ figure.gallery-insta:hover {
   border-color: #858080;
 }
 
-/* Kính lúp t8 */
 .eye-wrapper {
   position: absolute;
   top: 50%;
@@ -798,10 +793,9 @@ figure.gallery-insta:hover {
   transform: translate(-50%, -50%);
   font-size: 38px;
   color: white;
-  display: none; /* Ẩn kính lúp */
+  display: none; 
   z-index: 2;
 }
-/* phần kính lúp trang 8  */
 figure.gallery-insta:hover .eye-wrapper {
   display: block;
 }
@@ -850,7 +844,6 @@ figure.gallery-insta:hover .eye-wrapper {
   margin-bottom: 40px;
 }
 
-/* các khung ngang hàng trang 9 */
 .team-section .row {
   display: flex;
   justify-content: center;
@@ -869,7 +862,7 @@ figure.gallery-insta:hover .eye-wrapper {
   border-radius: 8px;
   max-width: 300px;
   text-align: center;
-  overflow: hidden; /* Ẩn phần thừa */
+  overflow: hidden; 
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -914,7 +907,6 @@ figure.gallery-insta:hover .eye-wrapper {
   font-weight: 100;
 }
 
-/* Thanh trang trí dưới phần ảnh trang 9 */
 .team-section .team-item .team-info:after {
   content: "";
   display: block;
